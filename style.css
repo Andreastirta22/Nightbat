@@ -339,12 +339,12 @@ nav {
   overflow: hidden;
 }
 
-.form-section {
+/* .form-section {
   background-color: #e6e6e6;
   padding: 20px;
   text-align: center;
   flex: 1;
-}
+} */
 
 .form-section img {
   max-width: 300px;
@@ -353,7 +353,7 @@ nav {
 }
 
 .form-section {
-  background-color: #fdf3ef;
+  background-color: var(--primary-color);
   padding: 30px;
   flex: 2;
   position: relative;
@@ -367,7 +367,7 @@ nav {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #5c4033;
+  color: var(--primary-color-dark);
 }
 
 .form-group {
@@ -391,8 +391,8 @@ nav {
 }
 
 .submit-btn {
-  background-color: #5c4033;
-  color: white;
+  background-color: var(--primary-color-dark);
+  color: var(--white);
   margin-top: 2rem;
   padding: 15px;
   border: none;
@@ -403,7 +403,63 @@ nav {
 }
 
 .submit-btn:hover {
-  background-color: #402d24;
+  background-color: #982B1C;
+}
+
+/* Styling for the button */
+.animated-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  backgrou982B1Cnd-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.animated-button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Overlay for the drop-down effect */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--primary-color);
+  transition: height 0.5s ease, opacity 0.5s ease;
+  z-index: 10; /* Ensure it appears above all other content */
+  opacity: 0;
+}
+
+/* When active, expand the overlay to cover the viewport */
+.overlay.active {
+  height: 100vh;
+  opacity: 1;
+}
+
+/* Optional button clicked animation */
+.animated-button.clicked {
+  animation: clickAnimation 0.5s forwards;
+}
+
+@keyframes clickAnimation {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1.2);
+      opacity: 0;
+  }
 }
 
 @media (width > 768px) {
@@ -632,7 +688,7 @@ nav {
   }
 
   .form-section {
-    background-color: #fdf3ef;
+    background-color: var(--primary-color);
     padding: 30px;
     flex: 2;
     position: relative;
@@ -670,7 +726,7 @@ nav {
   }
 
   .submit-btn {
-    background-color: #5c4033;
+    background-color: var(--primary-color-dark);
     color: white;
     margin-top: 2rem;
     padding: 15px;
@@ -682,5 +738,6 @@ nav {
   }
 
   .submit-btn:hover {
-    background-co
+    color: var(--white);
   }
+}
