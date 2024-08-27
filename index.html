@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Night-Bat | Production |</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_header">
+            <div class="nav_logo">
+                <a href="#">Night<span>Bat</span>.</a>
+            </div>
+            <div class="nav_menu_btn" id="menu-btn">
+                <span><i class="ri-menu-4-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav_links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown_menu">
+                    <li><a href="#">Produksi Booth</a></li>
+                    <li><a href="#">Produksi Event & Pameran</a></li>
+                    <li><a href="#">Level dan Stage</a></li>
+                    <li><a href="#">Backdrop & Wall Branding</a></li>
+                    <li><a href="#">Custom 3D</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav_btns">
+            <button class="btn sign_up">Sign Up</button>
+            <button class="btn sign_in">Sign In</button>
+        </div>
+    </nav>
+
+    <header class="header_container">
+        <div class="header_image">
+            <div class="header_image_card header_image_card-1">
+                <span><i class="ri-git-merge-fill"> 3D Production</i></span>
+            </div>
+            <div class="header_image_card header_image_card-2">
+                <span><i class="ri-trophy-line"> Level & Stage</i></span>
+            </div>
+            <div class="header_image_card header_image_card-3">
+                <span><i class="ri-24-hours-line"> Exhibition</i></span>
+            </div>
+            <div class="header_image_card header_image_card-4">
+                <span><i class="ri-bnb-fill"> Backdrop</i></span>
+            </div>
+            <img src="assets/header.png" alt="header">
+        </div>
+        <div class="header_content">
+            <h1>Jasa Booth <br> <span class="typing"></span> dan<br>  Kebutuhan Pameran </h1>
+            <p>Solusi lengkap kebutuhan produksi pameran, dari stage, booth, backdrop, lighting, advertising, hingga custom produksi lainnya.</p>
+            <form action="/">
+                <div class="input__row">
+                  <div class="input__group">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <h5>Destination</h5>
+                  </div>
+                  <div class="input__group">
+                    <span><i class="ri-calendar-2-line"></i></span>
+                    <h5>Date</h5>
+                  </div>
+                </div>
+                <button type="submit">Tanya Ketersediaan</button>
+              </form>
+        </div>
+    </header>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ['<i>Backdrop</i>', '&amp; Wall.'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            startDelay: 500,
+            loop: true,
+    });
+    </script>
+</body>
+</html>
