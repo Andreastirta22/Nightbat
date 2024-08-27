@@ -21,7 +21,7 @@
             </div>
         </div>
         <ul class="nav_links" id="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="dropdown">
                 <a href="#">Services</a>
                 <ul class="dropdown_menu">
@@ -37,19 +37,30 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="nav_btns">
-            <button class="btn sign_in"><i class="ri-whatsapp-fill">Whatsapp</i></button>
+            <button class="btn sign_in"><a href="https://wa.me/6285706367057" target="_blank"><i
+                        class="ri-whatsapp-fill">Whatsapp</i></a></button>
         </div>
     </nav>
     <div class="form_container">
         <div class="form-section">
-            <img src="logo.png" alt="MAESTRO Pro">
+            <img src="assets/AfcoProduction.png" alt="MAESTRO Pro">
         </div>
         <div class="form-section">
             <form>
                 <div class="form-group">
                     <label for="jenis-pekerjaan">Jenis Pekerjaan*</label>
                     <select id="jenis-pekerjaan" required>
+                        <option value="" disabled selected>Pilih Jenis Pekerjaan</option>
                         <option value="Booth">Booth</option>
+                        <option value="Booth">Pameran</option>
+                        <option value="Booth">Neon Box</option>
+                        <option value="Booth">Backdrop</option>
+                        <option value="Booth">Interior Design</option>
+                        <option value="Booth">Billboard</option>
+                        <option value="Booth">Acrylic Logo</option>
+                        <option value="Booth">Produk Custom</option>
+                        <option value="Booth">Wall Branding</option>
+                        <option value="Booth">Lainnya</option>
                         <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
                     </select>
                 </div>
@@ -78,6 +89,7 @@
                     <label for="desain">Sudah ada desain?</label>
                     <select id="desain" required>
                         <option value="Sudah Ada">Sudah Ada</option>
+                        <option value="Sudah Ada">Tidak Ada</option>
                         <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
                     </select>
                 </div>
@@ -86,6 +98,18 @@
             </form>
         </div>
     </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ['<i>Backdrop</i>', '&amp; Wall.'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            startDelay: 500,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
