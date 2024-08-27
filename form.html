@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Night-Bat | Production |</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_header">
+            <div class="nav_logo">
+                <a href="index.html">Night<span>Bat</span>.</a>
+            </div>
+            <div class="nav_menu_btn" id="menu-btn">
+                <span><i class="ri-menu-4-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav_links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown_menu">
+                    <li><a href="#">Produksi Booth</a></li>
+                    <li><a href="#">Produksi Event & Pameran</a></li>
+                    <li><a href="#">Level dan Stage</a></li>
+                    <li><a href="#">Backdrop & Wall Branding</a></li>
+                    <li><a href="#">Custom 3D</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav_btns">
+            <button class="btn sign_in"><i class="ri-whatsapp-fill">Whatsapp</i></button>
+        </div>
+    </nav>
+    <div class="form_container">
+        <div class="form-section">
+            <img src="logo.png" alt="MAESTRO Pro">
+        </div>
+        <div class="form-section">
+            <form>
+                <div class="form-group">
+                    <label for="jenis-pekerjaan">Jenis Pekerjaan*</label>
+                    <select id="jenis-pekerjaan" required>
+                        <option value="Booth">Booth</option>
+                        <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama">Nama*</label>
+                    <input type="text" id="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama-perusahaan">Nama Perusahaan*</label>
+                    <input type="text" id="nama-perusahaan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="no-wa">No. WA*</label>
+                    <input type="tel" id="no-wa" placeholder="Contoh: 62812345678901" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ukuran">Ukuran*</label>
+                    <input type="text" id="ukuran" placeholder="dalam m^2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="desain">Sudah ada desain?</label>
+                    <select id="desain" required>
+                        <option value="Sudah Ada">Sudah Ada</option>
+                        <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Tanya Ketersediaan</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
