@@ -36,9 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.count');
-    const speed = 200; // Kecepatan animasi
 
     counters.forEach(counter => {
+        const speed = +counter.getAttribute('data-speed') || 400; // Kecepatan animasi default
+
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
