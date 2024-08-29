@@ -745,6 +745,12 @@ img {
 .services-container .card__img {
   width: 328px;
   border-radius: 1.5rem;
+
+}
+.services-container .card__img-skate {
+  width: 100ch;
+  height: 30ch;
+  border-radius: 1.5rem;
 }
 
 .services-container .card__data {
