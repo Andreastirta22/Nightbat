@@ -626,9 +626,10 @@ nav {
 .page-content .text p {
   font-size: 1.2rem;
   color: #555;
+  font-weight: bold;
 }
 
-.container {
+.page-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -683,7 +684,7 @@ nav {
   width: 120px;
 }
 
-.container .card img {
+.page-container .card img {
   margin-top: 40px;
   width: 100px;
   height: 100px;
@@ -695,6 +696,152 @@ nav {
   margin-top: 30px;
   text-align: center;
   padding: 0 20px;
+}
+
+.services-content .text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-content .text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+ img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.services-container {
+  display: flex; /* Gunakan flexbox untuk membuat layout horizontal */
+  justify-content: center; /* Untuk memusatkan card */
+  flex-wrap: wrap; /* Agar card bisa membungkus ke baris baru jika ruang tidak cukup */
+  gap: 2rem; /* Jarak antar card */
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+
+.services-container .card__container {
+  display: flex;
+  flex-direction: row; /* Susun card secara horizontal */
+  gap: 3.5rem;
+}
+
+.services-container .card__article {
+  position: relative;
+  overflow: hidden;
+  flex: 0 1 328px; /* Tetapkan lebar card dan memungkinkan pembungkusan */
+}
+
+.services-container .card__img {
+  width: 328px;
+  border-radius: 1.5rem;
+}
+
+.services-container .card__data {
+  width: 280px;
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.services-container .card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.services-container .card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.services-container .card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.services-container .card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.services-container .card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.services-container .card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.services-container .card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.services-container .card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
 }
 
 @keyframes clickAnimation {
@@ -1172,4 +1319,15 @@ nav {
     color: var(--text-dark);
   }
 
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
 }
+
