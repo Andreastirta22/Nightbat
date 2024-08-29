@@ -671,7 +671,7 @@ nav {
 }
 
 .filledbar {
-  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
   height: 100%;
   width: 0;
   position: absolute;
@@ -708,32 +708,38 @@ nav {
   margin-bottom: 20px;
 }
 
- img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /*=============== CARD ===============*/
+.services-content h1 {
+  margin-top: 50px;
+}
+
 .services-container {
-  display: flex; /* Gunakan flexbox untuk membuat layout horizontal */
-  justify-content: center; /* Untuk memusatkan card */
-  flex-wrap: wrap; /* Agar card bisa membungkus ke baris baru jika ruang tidak cukup */
-  gap: 2rem; /* Jarak antar card */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin-inline: 1.5rem;
   padding-block: 5rem;
 }
 
 .services-container .card__container {
   display: flex;
-  flex-direction: row; /* Susun card secara horizontal */
-  gap: 3.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
 }
 
 .services-container .card__article {
   position: relative;
   overflow: hidden;
-  flex: 0 1 328px; /* Tetapkan lebar card dan memungkinkan pembungkusan */
+  flex: 0 1 328px;
 }
 
 .services-container .card__img {
@@ -743,7 +749,7 @@ nav {
 
 .services-container .card__data {
   width: 280px;
-  background-color: var(--container-color);
+  background-color: var(--white);
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
@@ -752,7 +758,7 @@ nav {
   left: 0;
   right: 0;
   margin-inline: auto;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s 1s;
 }
 
@@ -811,6 +817,7 @@ nav {
   50% {
     transform: translateY(-10rem);
   }
+
   100% {
     transform: translateY(-7rem);
   }
@@ -826,9 +833,11 @@ nav {
   0% {
     transform: translateY(-7rem);
   }
+
   50% {
     transform: translateY(-10rem);
   }
+
   100% {
     transform: translateY(.5rem);
   }
@@ -839,6 +848,7 @@ nav {
     overflow: initial;
     pointer-events: none;
   }
+
   50% {
     overflow: hidden;
   }
@@ -1330,4 +1340,3 @@ nav {
   }
 
 }
-
