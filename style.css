@@ -716,7 +716,7 @@ img {
 
 /*=============== CARD ===============*/
 .services-content h1 {
-  margin-top: 50px;
+  margin-top: -10px;
 }
 
 .services-container {
@@ -747,6 +747,7 @@ img {
   border-radius: 1.5rem;
 
 }
+
 .services-container .card__img-skate {
   width: 100ch;
   height: 30ch;
