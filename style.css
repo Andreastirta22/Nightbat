@@ -533,6 +533,7 @@ nav {
 
 .contact-section h1 {
   margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .contact-container {
@@ -931,5 +932,59 @@ nav {
   .stat p {
     font-size: 18px;
     margin: 5px 0 0;
+  }
+
+  .contact-section {
+    max-width: var(--max-width);
+    text-align: center;
+    margin: auto;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 1200px;
+    overflow-x: hidden;
+  }
+
+  .contact-section h1 {
+    margin-bottom: 40px;
+    margin-top: 100px;
+  }
+
+  .contact-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .map-container {
+    flex: 2;
+    border: 1px solid #ddd;
+    max-width: 600px;
+  }
+
+  .contact-info {
+    flex: 1;
+    text-align: left;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-left: 30px;
+  }
+
+  .contact-info p {
+    margin: 10px 0;
+    text-align: left;
+    font-size: 15px;
+    line-height: 2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+
+  }
+
+  .text-container p {
+    color: #3d2d24;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
 }
