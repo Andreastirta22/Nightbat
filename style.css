@@ -1024,4 +1024,67 @@ nav {
     margin-bottom: 20px;
     margin-left: 10px;
   }
+
+  .home-content {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+
+  .logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .home-content .logo-text-container img {
+    width: 60%;
+  }
+
+  .text-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .text-container p {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: var(--white);
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: justify;
+    transition: 0.3s;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .stat {
+    text-align: center;
+
+  }
+
+  .stat h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .stat p {
+    font-size: 18px;
+    margin: 5px 0 0;
+    background-color: var(--white);
+    color: var(--text-dark);
+  }
+
 }
