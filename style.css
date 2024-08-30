@@ -895,7 +895,6 @@ img {
     left: -125%;
     padding: 1rem;
     background-color: var(--primary-color);
-    /* Latar belakang dropdown tetap putih */
     border-radius: 5px;
   }
 
@@ -904,12 +903,10 @@ img {
     display: block;
     color: var(--text-dark);
     white-space: nowrap;
-    /* Mencegah teks membungkus */
   }
 
   .dropdown_menu li a:hover {
     color: var(--primary-color-dark);
-    /* Warna teks berubah saat dihover */
   }
 
   .nav_header {
